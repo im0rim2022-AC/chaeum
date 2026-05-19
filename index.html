@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>채움국어학원 | 원장직강으로 성적을 채우고 미래를 밝히다</title>
+  <meta name="description" content="모든 수업 원장직강! 중고등부 국어 전문 채움국어학원. 대리 강사 없는 철저한 1:1 클리닉, 자체제작 교재, 밀착 피드백으로 내신과 수능 1등급을 완성합니다.">
+  <meta name="keywords" content="채움국어학원, 대치동 국어학원, 중등국어, 고등국어, 수능국어, 내신국어, 원장직강, 국어클리닉">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="채움국어학원 | 원장직강 전문">
+  <meta property="og:description" content="모든 수업 원장직강! 밀착 1:1 피드백과 자체제작 교재로 확실한 성적 향상을 약속합니다.">
+  <meta property="og:image" content="assets/hero_background.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header id="header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="logoLink">
+        <div>
+          <h1 class="logo-text-ko">채움<span>국어</span></h1>
+          <div class="logo-tagline">Chaeum Korean Academy</div>
+        </div>
+      </a>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Desktop/Mobile Nav Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">학원 소개</a></li>
+          <li><a href="#usp" class="nav-link">원장 강점</a></li>
+          <li><a href="#curriculum" class="nav-link">커리큘럼</a></li>
+          <li><a href="#clinic" class="nav-link">1:1 클리닉</a></li>
+          <li><a href="#contact" class="nav-link">위치 & 문의</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <button class="btn btn-primary pulse-effect" onclick="openConsultationModal()">상담 & 레벨테스트</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-subtitle">100% 원장 직강의 확신</span>
+          <h2 class="hero-title serif-title">오직 원장 직강의 차이.<br>성적을 <span>채우고</span>, 미래를 <span>밝히다</span>.</h2>
+          <p class="hero-description">대리 강사나 채점 아르바이트가 없습니다. 수업 분석부터 채점, 오답 피드백, 1:1 밀착 클리닉까지 원장이 직접 한 학생 한 학생 정성껏 지도하여 최상위 등급을 완성합니다.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="openQuizModal()">3분 국어 진단 테스트</button>
+            <button class="btn btn-secondary" onclick="openConsultationModal()">1:1 입학 상담 신청</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Director Biography & Philosophy Section -->
+    <section class="section director-section" id="about">
+      <div class="container">
+        <div class="director-grid">
+          <div class="director-info scroll-animate" id="directorInfo">
+            <span class="director-tag">PRINCIPAL DIRECTOR</span>
+            <h3 class="director-name serif-title">김지우 원장 <span>국어과 대표 원장</span></h3>
+            <p class="director-quote">"국어 점수는 단순한 암기가 아닌,<br>글을 꿰뚫는 문해력과 철저한 오답 교정에서 완성됩니다."</p>
+            <p class="director-bio">대치 및 명문 학원가에서 다년간 최상위권 학생들을 양성하며 축적한 실전 노하우를 바탕으로, 학생 한 명 한 명의 취약점을 정밀하게 파악하여 오답의 구멍을 메웁니다. 국어 공부의 바른 길을 원장이 직접 안내하겠습니다.</p>
+            <ul class="director-credentials">
+              <li>서울대학교 국어교육과 졸업</li>
+              <li>前 대치/서초 대형 입시학원 최우수 강사</li>
+              <li>수능 국어 모의고사 검토 위원</li>
+              <li>자체제작 교재 [채움 국어 시리즈] 저자</li>
+              <li>누적 수강생 3,500명 돌파 및 1등급 다수 배출</li>
+              <li>10년 연속 수능/내신 트렌드 정밀 분석</li>
+            </ul>
+          </div>
+          <div class="director-media scroll-animate" id="directorMedia">
+            <div class="image-frame">
+              <img src="assets/director_portrait.png" alt="김지우 대표 원장 프로필 사진">
+              <div class="frame-border"></div>
+              <div class="badge-overlay">
+                <div class="badge-title">Direct Lecture</div>
+                <div class="badge-text">전 타임 원장 직강</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP Strength Cards Section -->
+    <section class="section usp-section" id="usp">
+      <div class="container">
+        <div class="section-title-wrap scroll-animate">
+          <span class="section-subtitle">Core Difference</span>
+          <h2 class="section-title serif-title">왜 원장 직강이어야 하는가</h2>
+          <p>시간 때우기 식 수업은 성적을 바꿀 수 없습니다. 채움국어학원만의 차별화된 직강 관리 시스템을 확인하세요.</p>
+        </div>
+        
+        <div class="usp-grid">
+          <div class="usp-card scroll-animate">
+            <div class="usp-num">01</div>
+            <h4 class="usp-card-title">원장 직접 밀착 트래킹</h4>
+            <p class="usp-card-desc" style="color: var(--text-muted);">학생의 매주 숙제 이행률, 오답 분석표 및 약점 피드백을 원장이 직접 하나하나 모니터링하고 기록하여 관리합니다.</p>
+          </div>
+          
+          <div class="usp-card scroll-animate">
+            <div class="usp-num">02</div>
+            <h4 class="usp-card-title">직접 발간 자체교재</h4>
+            <p class="usp-card-desc" style="color: var(--text-muted);">시중 교재로는 완벽할 수 없습니다. 수능/평가원 최근 7개년 경향 분석 및 지역 학교별 시험 기출을 완벽 분석한 특화 교재를 직접 집필합니다.</p>
+          </div>
+          
+          <div class="usp-card scroll-animate">
+            <div class="usp-num">03</div>
+            <h4 class="usp-card-title">직접 채점 & 피드백</h4>
+            <p class="usp-card-desc" style="color: var(--text-muted);">알바 조교에게 채점을 맡기지 않습니다. 일일 단어 테스트와 오답 분석을 원장이 직접 채점하여 학생의 논리 오류를 날카롭게 짚어냅니다.</p>
+          </div>
+          
+          <div class="usp-card scroll-animate">
+            <div class="usp-num">04</div>
+            <h4 class="usp-card-title">무제한 질의응답 피드백</h4>
+            <p class="usp-card-desc" style="color: var(--text-muted);">질문에 막힘없는 해결을 약속합니다. 학원 내 클리닉 시간 외에도 실시간 비대면 질의응답을 지원하여 끝까지 이해를 돕습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialized Curriculum Section -->
+    <section class="section" id="curriculum">
+      <div class="container">
+        <div class="section-title-wrap scroll-animate">
+          <span class="section-subtitle">Specialized Curriculum</span>
+          <h2 class="section-title serif-title">학년별 최적화된 국어 로드맵</h2>
+          <p>중등부 독해력 기반 다지기부터 고등부 수능/내신 1등급 완성까지, 탄탄하게 짜인 빈틈없는 커리큘럼입니다.</p>
+        </div>
+
+        <div class="curriculum-tabs-nav scroll-animate">
+          <button class="tab-btn active" onclick="switchCurriculum('middle')">중등부 (Middle School)</button>
+          <button class="tab-btn" onclick="switchCurriculum('high')">고등부 (High School)</button>
+        </div>
+
+        <!-- Middle School Tab Content -->
+        <div class="curriculum-content-pane active" id="middleCurriculum">
+          <div class="curr-card scroll-animate">
+            <div class="curr-header">
+              <span class="curr-badge">중등 1-2학년</span>
+              <h4 class="curr-title">비문학 독해 & 문해력 기본</h4>
+            </div>
+            <ul class="curr-list">
+              <li>문해력 기초 진단 및 맞춤 어휘 학습</li>
+              <li>다양한 제재(인문, 과학, 예술)의 글 구조 분석</li>
+              <li>단락별 핵심 파악 및 능동적 요약 훈련</li>
+              <li>독서 논술을 통한 논리적 글쓰기 훈련</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 비문학 기초] 시리즈</div>
+          </div>
+
+          <div class="curr-card scroll-animate">
+            <div class="curr-header">
+              <span class="curr-badge">중등 3학년</span>
+              <h4 class="curr-title">예비고 국어 개념 완성</h4>
+            </div>
+            <ul class="curr-list">
+              <li>고등 국어 필수 문학 개념어 마스터</li>
+              <li>현대시, 현대소설의 핵심 감상법 훈련</li>
+              <li>기초 문법 요소(음운의 변동, 문장 성분) 확립</li>
+              <li>고1 모의고사 기출 분석 및 적응 훈련</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 문학 개념어 / 문법]</div>
+          </div>
+
+          <div class="curr-card scroll-animate">
+            <div class="curr-header">
+              <span class="curr-badge">내신 집중 기간</span>
+              <h4 class="curr-title">학교별 맞춤형 내신 대비</h4>
+            </div>
+            <ul class="curr-list">
+              <li>시험 4주 전, 학교별 교과서 맞춤 수업 전환</li>
+              <li>교과서 지문 완벽 분석 및 암기 확인</li>
+              <li>역대 기출 문제 및 변형 문제 3단계 훈련</li>
+              <li>개인별 맞춤 오답 재유형 테스트</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 학교별 내신 특화 비책]</div>
+          </div>
+        </div>
+
+        <!-- High School Tab Content -->
+        <div class="curriculum-content-pane" id="highCurriculum">
+          <div class="curr-card">
+            <div class="curr-header">
+              <span class="curr-badge">고등 1-2학년</span>
+              <h4 class="curr-title">수능 기초 & 내신 1등급</h4>
+            </div>
+            <ul class="curr-list">
+              <li>평가원 기출을 통한 문학/비문학 패턴 독해</li>
+              <li>수능 고전시가 필수 어휘 및 해석 공식 완성</li>
+              <li>학교별 부교재, 프린트, 모의고사 변형 연계 대비</li>
+              <li>중간/기말고사 완벽 대비 직전 보강</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 내신·수능 동행] 시리즈</div>
+          </div>
+
+          <div class="curr-card">
+            <div class="curr-header">
+              <span class="curr-badge">고등 3학년 수능집중</span>
+              <h4 class="curr-title">실전 수능 파이널 & 연계 분석</h4>
+            </div>
+            <ul class="curr-list">
+              <li>EBS 수능특강, 수능완성 지문 완벽 연계 분석</li>
+              <li>킬러 문항(비문학 과학/기술, 경제 등) 심화 정복</li>
+              <li>실전 모의고사 매주 실시 및 80분 시간 관리</li>
+              <li>오전 수능 시간 맞춤 두뇌 트레이닝 피드백</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 EBS 연계 변형 & 실전 모의]</div>
+          </div>
+
+          <div class="curr-card">
+            <div class="curr-header">
+              <span class="curr-badge">연중 상시 관리</span>
+              <h4 class="curr-title">약점 심층 보완 스페셜</h4>
+            </div>
+            <ul class="curr-list">
+              <li>모의고사 분석을 통한 개인별 약점 영역 발견</li>
+              <li>영역별(화작/언매/비문학) 집중 보완 과제 제공</li>
+              <li>원장이 매주 주말 1:1 심층 질문 클리닉 진행</li>
+              <li>매주 오답 유사 문제 재출제 피드백</li>
+            </ul>
+            <div class="curr-footer">교재: [채움 개인 맞춤형 오답 노트]</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Systematic 1:1 Clinic Section -->
+    <section class="section section-dark" id="clinic">
+      <div class="container">
+        <div class="section-title-wrap scroll-animate">
+          <span class="section-subtitle">Systematic 1:1 Clinic</span>
+          <h2 class="section-title serif-title">철저한 피드백 순환 구조, 채움 클리닉</h2>
+          <p>일반 조교에게 방치되는 자습이 아닙니다. 원장이 모든 과정을 면밀히 체크하여 성적 향상을 이뤄냅니다.</p>
+        </div>
+
+        <div class="clinic-grid">
+          <div class="clinic-media scroll-animate">
+            <div class="image-frame">
+              <img src="assets/clinic_illustration.png" alt="1:1 클리닉 학습 멘토링 모습">
+              <div class="frame-border"></div>
+            </div>
+          </div>
+
+          <div class="clinic-timeline scroll-animate">
+            <!-- Step 1 -->
+            <div class="clinic-step active" onclick="activateClinicStep(0)">
+              <div class="step-number">01</div>
+              <div class="step-info">
+                <div class="step-title">
+                  진단 & 정밀 측정
+                  <span class="step-badge">주간 테스트</span>
+                </div>
+                <p class="step-desc">매주 수업 전 지난 수업 내용 복습 테스트 및 핵심 어휘 시험을 칩니다. 단순 단답형 채점이 아닌 원장이 오답 경로까지 살핍니다.</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="clinic-step" onclick="activateClinicStep(1)">
+              <div class="step-number">02</div>
+              <div class="step-info">
+                <div class="step-title">
+                  취약 오답 유형 분석
+                  <span class="step-badge">원장 직접 대면 분석</span>
+                </div>
+                <p class="step-desc">틀린 문항을 단순 해설지로 공부하지 않게 합니다. 원장과 마주 앉아 틀린 개념의 원인을 짚고 정답의 근거를 논리적으로 설명하도록 유도합니다.</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="clinic-step" onclick="activateClinicStep(2)">
+              <div class="step-number">03</div>
+              <div class="step-info">
+                <div class="step-title">
+                  유사 연계 보완 과제
+                  <span class="step-badge">개별 맞춤 클리닉지</span>
+                </div>
+                <p class="step-desc">틀린 지문과 난이도가 유사한 기출 문제 및 연계 오답 변형 문제를 맞춤형 봉투형 과제로 개별 배포하여 재오답을 철저히 차단합니다.</p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="clinic-step" onclick="activateClinicStep(3)">
+              <div class="step-number">04</div>
+              <div class="step-info">
+                <div class="step-title">
+                  완벽 마스터 & 학부모 리포트
+                  <span class="step-badge">정기 리포트 발송</span>
+                </div>
+                <p class="step-desc">모든 성취 상태는 데이터화되어 학업 분석 리포트로 학부모님께 문자 또는 유선으로 원장이 직접 종합 피드백 의견과 함께 주간 전송됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation & Level Test Section -->
+    <section class="section consultation-section">
+      <div class="container">
+        <div class="cta-box scroll-animate">
+          <span class="cta-tagline">Fill and Illuminate</span>
+          <h3 class="cta-title serif-title">우리 아이 국어 점수,<br>가장 빠르고 확실하게 채우는 방법</h3>
+          <p class="cta-desc">국어 성적의 정확한 진단 없이는 발전할 수 없습니다. 3분간 진행되는 간이 모의 진단 테스트를 해보시거나, 원장님과 직접 만나 꼼꼼한 상담을 예약해 보세요.</p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary pulse-effect" onclick="openQuizModal()">3분 국어 진단 테스트 시작</button>
+            <button class="btn btn-secondary" onclick="openConsultationModal()">방문 입학 상담 예약하기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-wrap scroll-animate">
+            <h3 class="contact-headline serif-title">학원 오시는 길 & 상담 문의</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-detail">
+                  <h4>학원 주소</h4>
+                  <p>서울 강남구 삼성로 312 (대치동 989-2) 채움빌딩 3층</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-detail">
+                  <h4>상담 및 문의 전화</h4>
+                  <p><a href="tel:02-555-1234">02-555-1234</a> <span style="font-size: 0.85rem; color: var(--accent-gold-dark); font-weight: bold;">(모바일 클릭 시 통화 연결)</span></p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <div class="contact-detail">
+                  <h4>상담 운영 시간</h4>
+                  <p>평일: 오후 2시 ~ 오후 10시 | 주말: 오전 9시 ~ 오후 9시</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">🚌</div>
+                <div class="contact-detail">
+                  <h4>교통 안내</h4>
+                  <p>지하철: 3호선 대치역 2번 출구 도보 5분 거리<br>버스: 은마아파트입구사거리 정류장 하차 도보 2분</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="scroll-animate">
+            <div class="map-container">
+              <div class="map-mockup">
+                <!-- Premium Styled Interactive Map Mockup -->
+                <div class="map-info-bubble">채움국어학원 (3층)</div>
+                <div class="map-pin" onclick="alert('채움국어학원: 서울 강남구 삼성로 312 채움빌딩 3층. 대치역 도보 5분 거리에 위치하고 있습니다.')">
+                  <div class="map-pin-inner">채움</div>
+                </div>
+                <button class="map-control-btn map-zoom-in" onclick="alert('지도 확대 기능 시뮬레이션')">+</button>
+                <button class="map-control-btn map-zoom-out" onclick="alert('지도 축소 기능 시뮬레이션')">-</button>
+                <div class="map-overlay-hud">
+                  <span>🗺️ 대치동 학원가 중심가</span>
+                  <span>|</span>
+                  <span style="color: var(--accent-gold-dark); cursor: pointer;" onclick="window.open('https://map.naver.com/', '_blank')">네이버 지도에서 보기 →</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>채움<span>국어</span>학원</h3>
+          <p>원장의 진심과 학생의 땀방울이 만나는 공간. 채움국어학원은 학생의 문해력과 논리력을 채워 빛나는 미래를 약속합니다.</p>
+          <p style="font-size: 0.8rem;">대표자: 김지우 | 학원등록번호: 제1234-5호 | 교습과정: 중고등 국어 단과</p>
+        </div>
+        <div>
+          <h4 class="footer-links-title">학원 정보</h4>
+          <ul class="footer-links">
+            <li><a href="#about">학원 소개</a></li>
+            <li><a href="#usp">원장 직강 안내</a></li>
+            <li><a href="#curriculum">교육 과정</a></li>
+            <li><a href="#clinic">1:1 클리닉 시스템</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-links-title">상담 안내</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openConsultationModal()">방문 상담 예약</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuizModal()">간이 레벨 테스트</a></li>
+            <li><a href="tel:02-555-1234">전화: 02-555-1234</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-links-title">학습 정책</h4>
+          <ul class="footer-links">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">수강료 반환 기준</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chaeum Korean Language Academy. All Rights Reserved.</p>
+        <p>Designed with Academic Excellence & Premium Care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Request Modal -->
+  <div class="modal-overlay" id="consultationModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeConsultationModal()">&times;</button>
+      <div class="modal-body">
+        <div class="modal-title-wrap">
+          <h3 class="modal-title serif-title">1:1 입학 상담 & 방문 예약</h3>
+          <p class="modal-subtitle">예약 양식을 작성해주시면 원장님이 직접 상세 일정 조율 전화를 드립니다.</p>
+        </div>
+        
+        <form id="consultationForm" onsubmit="submitConsultation(event)">
+          <div class="form-group">
+            <label class="form-label" for="parentName">학부모 성함 *</label>
+            <input type="text" id="parentName" class="form-input" required placeholder="예: 홍길동">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="parentPhone">연락처 *</label>
+            <input type="tel" id="parentPhone" class="form-input" required placeholder="예: 010-1234-5678" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="studentName">학생 이름 *</label>
+              <input type="text" id="studentName" class="form-input" required placeholder="예: 홍민수">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="studentGrade">학생 학년 *</label>
+              <select id="studentGrade" class="form-input form-select" required>
+                <option value="" disabled selected>선택하세요</option>
+                <option value="중1">중학교 1학년</option>
+                <option value="중2">중학교 2학년</option>
+                <option value="중3">중학교 3학년</option>
+                <option value="고1">고등학교 1학년</option>
+                <option value="고2">고등학교 2학년</option>
+                <option value="고3">고등학교 3학년 / N수</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="focusArea">가장 고민이 되는 국어 영역</label>
+            <select id="focusArea" class="form-input form-select">
+              <option value="비문학">독서 (비문학 독해력 부족)</option>
+              <option value="문학">문학 (시/소설 해석 개념 부족)</option>
+              <option value="문법">문법 (언어와 매체 기초 시급)</option>
+              <option value="내신">내신 (중고등 학교별 내신 성적 저조)</option>
+              <option value="종합">종합 상담 (수능 등급 정체기)</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="quizScoreGroup" style="display:none;">
+            <label class="form-label" for="quizScoreField">사전 진단 테스트 점수</label>
+            <input type="text" id="quizScoreField" class="form-input" readonly style="background-color: #EDF2F7; cursor: not-allowed;">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="consultationDate">상담 희망 일자</label>
+            <input type="date" id="consultationDate" class="form-input">
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">상담 신청서 제출하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3-Minute Diagnostic Quiz Modal -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeQuizModal()">&times;</button>
+      <div class="modal-body">
+        
+        <!-- Quiz Main Screen -->
+        <div id="quizContent">
+          <div class="modal-title-wrap">
+            <h3 class="modal-title serif-title">3분 국어 기본기 진단 테스트</h3>
+            <p class="modal-subtitle">수능/내신 국어 실력을 빠르게 판단하는 맛보기 문항 3가지입니다.</p>
+          </div>
+          
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quizProgress"></div>
+          </div>
+
+          <!-- Question 1 -->
+          <div class="quiz-question-wrap active" data-qindex="0">
+            <div class="question-num">질문 1 / 3 [문법·맞춤법]</div>
+            <div class="question-text">다음 중 밑줄 친 단어의 맞춤법이 올바른 것은 무엇인가요?</div>
+            <div class="options-list">
+              <button class="option-btn" onclick="selectAnswer(0, 0)">1) 그 일은 <span style="text-decoration: underline; font-weight:700;">웬만해서는</span> 쉽게 끝나지 않는다.</button>
+              <button class="option-btn" onclick="selectAnswer(0, 1)">2) 오늘따라 <span style="text-decoration: underline; font-weight:700;">웬지</span> 기분이 묘하고 설렌다.</button>
+              <button class="option-btn" onclick="selectAnswer(0, 2)">3) 나는 그 충격적인 소식을 듣고 <span style="text-decoration: underline; font-weight:700;">어떻해</span> 할 줄을 몰랐다.</button>
+              <button class="option-btn" onclick="selectAnswer(0, 3)">4) 자식의 학업 성공은 부모의 간절한 <span style="text-decoration: underline; font-weight:700;">바램</span>이다.</button>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="quiz-question-wrap" data-qindex="1">
+            <div class="question-num">질문 2 / 3 [비문학 독서]</div>
+            <div class="question-text">다음 지문을 읽고, 글쓴이의 핵심 논지와 가장 일치하는 선지를 고르세요.</div>
+            <div class="quiz-passage">
+              "인공지능(AI) 기술의 고도화는 지식과 정보의 대중화를 이끌지만, 한편으로 정보의 무분별한 과잉과 신뢰성 검증이라는 거대한 과제를 제시한다. 이제 정보를 빠르게 습득하고 모으는 속도 경쟁보다는, 흘러넘치는 정보의 정확한 사실 관계를 확인하고 올바른 맥락 속에서 비판적으로 분석하는 문해력(Literacy)의 가치가 그 어느 때보다 중요해지고 있다."
+            </div>
+            <div class="options-list">
+              <button class="option-btn" onclick="selectAnswer(1, 0)">1) 인공지능 시대에는 빠른 정보의 습득과 속도가 최우선 가치이다.</button>
+              <button class="option-btn" onclick="selectAnswer(1, 1)">2) 기술의 발달은 분석을 자동화하므로 학생들의 비판적 독해력은 덜 중요해진다.</button>
+              <button class="option-btn" onclick="selectAnswer(1, 2)">3) 정보의 대중화 시대일수록 스스로 정보를 분석하고 성찰하는 문해력이 극대화되어 필요하다.</button>
+              <button class="option-btn" onclick="selectAnswer(1, 3)">4) 인공지능을 완벽히 다루는 법을 아는 코딩 기술이 독해력 교육보다 더 급선무다.</button>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="quiz-question-wrap" data-qindex="2">
+            <div class="question-num">질문 3 / 3 [고전 문학]</div>
+            <div class="question-text">고전 문학 작품에 자주 나타나는 관습적인 시어 중 '청산(靑山)'이 표상하는 지향점이나 상징적 성격이 다른 하나는 무엇인가요?</div>
+            <div class="options-list">
+              <button class="option-btn" onclick="selectAnswer(2, 0)">1) 자연 속 유유자적한 안빈낙도(安貧樂道)의 은거처</button>
+              <button class="option-btn" onclick="selectAnswer(2, 1)">2) 고통스럽고 번잡한 인간 속세(塵世)와 직접 대비되는 이상향</button>
+              <button class="option-btn" onclick="selectAnswer(2, 2)">3) 임과의 완전한 이별로 인한 사무친 한(恨)과 절망감이 영구히 투영된 단절적 공간</button>
+              <button class="option-btn" onclick="selectAnswer(2, 3)">4) 세속의 영달이나 물욕에서 초탈하여 풍류를 즐기기 위한 절대적 대자연</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quiz Result Screen -->
+        <div id="quizResult" style="display: none;">
+          <div class="modal-title-wrap">
+            <h3 class="modal-title serif-title font-gold">진단 테스트 결과</h3>
+            <p class="modal-subtitle">채움 국어 진단 검사 결과 분석 리포트</p>
+          </div>
+          
+          <div class="result-container">
+            <div class="result-score" id="quizScoreDisplay">80점</div>
+            <div class="result-badge" id="quizLevelDisplay">1등급 실력 보유자</div>
+            <div class="result-analysis" id="quizAnalysisText">
+              축하합니다! 국어 기본 기량이 탄탄합니다. 다만 문학의 심화 해석이나 고난도 오답 소거 과정에서 오차가 발생할 수 있으니 원장 상담을 통해 최종 1등급 안정화를 체크해 보세요.
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <button class="btn btn-primary" onclick="proceedToConsultationFromQuiz()">이 진단 결과를 바탕으로 원장님과 대면상담 예약</button>
+              <button class="btn btn-secondary" onclick="closeQuizModal()">나중에 하기</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
