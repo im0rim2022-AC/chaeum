@@ -289,20 +289,44 @@ function resetQuiz() {
 function submitConsultation(event) {
   event.preventDefault();
   
-  const parentName = document.getElementById('parentName').value;
-  const parentPhone = document.getElementById('parentPhone').value;
-  const studentName = document.getElementById('studentName').value;
-  const studentGrade = document.getElementById('studentGrade').value;
-  const focusArea = document.getElementById('focusArea').value;
-  const consultationDate = document.getElementById('consultationDate').value;
+  const form = document.getElementById('consultationForm');
+  const actionUrl = form.action;
   
-  // Mock form submission response
-  closeConsultationModal();
-  showToast(`✨ ${studentName} 학생(${studentGrade}) 상담서가 성공적으로 전송되었습니다! 김지우 원장이 24시간 이내 연락처(${parentPhone})로 전화드립니다.`);
-  
-  // Clear form
-  document.getElementById('consultationForm').reset();
-  document.getElementById('quizScoreGroup').style.display = 'none';
+  if (!actionUrl || actionUrl.includes('여기에_구글웹앱_URL을_입력하세요') || actionUrl === window.location.href) {
+    alert("구글 웹 앱 URL이 설정되지 않았습니다. index.html 파일에서 form의 action 속성에 URL을 먼저 입력해주세요.");
+    return;
+  }
+
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.innerText;
+  submitBtn.innerText = '전송 중...';
+  submitBtn.disabled = true;
+
+  const formData = new FormData(form);
+
+  fetch(actionUrl, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    const studentName = document.getElementById('studentName').value;
+    const studentGrade = document.getElementById('studentGrade').value;
+    const parentPhone = document.getElementById('parentPhone').value;
+    
+    closeConsultationModal();
+    showToast(`✨ ${studentName} 학생(${studentGrade}) 상담서가 성공적으로 전송되었습니다! 김진아 원장이 24시간 이내 연락처(${parentPhone})로 전화드립니다.`);
+    
+    form.reset();
+    document.getElementById('quizScoreGroup').style.display = 'none';
+  })
+  .catch(error => {
+    console.error('Error!', error.message);
+    showToast(`❌ 전송 중 오류가 발생했습니다. 다시 시도해주세요.`);
+  })
+  .finally(() => {
+    submitBtn.innerText = originalBtnText;
+    submitBtn.disabled = false;
+  });
 }
 
 function showToast(message) {
